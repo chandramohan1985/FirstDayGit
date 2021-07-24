@@ -1,0 +1,80 @@
+package org.libglobal;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
+
+public class AdactinHotel extends LibGlobal {
+	WebDriver driver;
+	LibGlobal l = new LibGlobal ();
+public void login(String username, String password) {
+    WebElement txtUserName = driver.findElement(By.id(username));
+    l.type(txtUserName, username);
+    WebElement txtPassword = driver.findElement(By.id("password"));
+    l.type(txtPassword, password);
+    WebElement btnlogin = driver.findElement(By.id("login"));
+    l.click(btnlogin);
+	}		
+
+public void searchHotel(int location,int hotels, int room_type,int room_nos,int date_pickin, int date_pickout,int adult_room,int child_room) {
+	WebElement txtLocation = driver.findElement(By.id("location"));
+	l.click(txtLocation);
+	Select s = new Select(txtLocation);
+	l.dDnSelectIndex(location);	
+    l.click(txtLocation);;
+	WebElement txtHotels = driver.findElement(By.id("hotels"));
+	l.click(txtHotels);
+	Select s1 = new Select(txtHotels);
+	l.dDnSelectIndex(hotels);	
+	l.click(txtHotels);
+	WebElement txtRoomType = driver.findElement(By.id("room_type"));
+	txtRoomType.click();
+	Select s2 = new Select(txtRoomType);
+	s2.selectByIndex(room_type);	
+	txtRoomType.click();
+	WebElement txtRoomNos = driver.findElement(By.id("room_nos"));
+	txtRoomNos.click();
+	Select s3 = new Select(txtRoomNos);
+	s3.selectByIndex(room_nos);	
+	txtRoomNos.click();
+	WebElement txtCheckIn = driver.findElement(By.id("datepick_in"));
+	txtCheckIn.sendKeys("date_pickin");
+	WebElement txtCheckOut = driver.findElement(By.id("datepick_out"));
+	txtCheckOut.sendKeys("date_pickout");
+	WebElement txtAdults = driver.findElement(By.id("adult_room"));
+	txtAdults.click();
+	Select s4 = new Select(txtAdults);
+	s4.selectByIndex(adult_room);	
+	txtAdults.click();
+	WebElement txtChild = driver.findElement(By.id("child_room"));
+	txtChild.click();
+	Select s5 = new Select(txtChild);
+	s5.selectByIndex(child_room);	
+	txtChild.click();
+	WebElement btnSearch = driver.findElement(By.id("Submit"));
+	btnSearch.click();
+       }
+	
+
+}
+	
+	
+}	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+
+	
+
+	
+
+

@@ -1,0 +1,30 @@
+package com.pages;
+
+
+
+public class AdactinBook extends LibGlobal {
+
+
+
+	public void bookingInfo() {
+		getDriver();
+		getUrl("https://adactinhotelapp.com");
+		
+AdactinLogin al= new AdactinLogin();
+al.login("cm123456", "chandra1985");
+
+ SearchHotel sh = new SearchHotel();
+sh.Search("london", "Hotel Sunshine", "Double", "2-Two", "23/07/2021","24/07/20121", "1-One", "1-One");
+SelectHotel sl = new SelectHotel();	
+sl.Select();
+BookHotel bh = new BookHotel();
+	bh.Book("chandra", "mohan", "chennai", "1234567890123456", "Master Card", "March", "2025", "4357");
+	BookingConfirm bc = new BookingConfirm();
+	bc.Booking(order_no);
+	
+	
+	
+	}
+	
+	
+}

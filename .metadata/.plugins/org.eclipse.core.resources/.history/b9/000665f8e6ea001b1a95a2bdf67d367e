@@ -1,0 +1,40 @@
+package frames8amclass;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class list extends UserDefinedList{
+public static void main(String[] args) {
+	
+	list l = new list();
+	l.setUserName(1234);
+	l.setPassword("chandra");
+	list e = new list();
+    e.setUserName1(2345);
+	e.setPassword1("Thvya");
+	list f = new list();
+	f.setUserName2(3456);
+	f.setPassword2("Yashvee");
+	
+List<list> li = new ArrayList<list>();
+	li.add(l);
+	li.add(e);
+	li.add(f);
+	for (list x : li) {
+		int userName3 = x.getUserName();
+		int userName12 = x.getUserName1();
+		int userName22 = x.getUserName2();
+		System.out.println(userName3);
+		System.out.println(userName12);
+		System.out.println(userName22);
+		String password3 = x.getPassword();
+		String password12 = x.getPassword1();
+		String password22 = x.getPassword2();
+		System.out.println(password3);
+		System.out.println(password12);
+		System.out.println(password22);
+	}
+	
+}
+
+}

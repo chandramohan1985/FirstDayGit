@@ -1,0 +1,40 @@
+package org.libglobal;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class AdactinHotel extends LibGlobal {
+	WebDriver driver;
+	
+	public void login(String username, String password) {
+		LibGlobal l = new LibGlobal ();
+	
+WebElement txtUserName = l.driver.findElement(By.id(username));
+l.
+WebElement txtPassword = driver.findElement(By.id("password"));
+l.type(password);
+WebElement btnlogin = driver.findElement(By.id("login"));
+l.click(btnlogin);
+	}		
+
+	
+	
+}	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+
+	
+
+	
+
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+    <parameter name="username"value="cm123456"></parameter>
+    <parameter name="password"value="chandra1985"></parameter>
+    <parameter name="location"value="london"></parameter>
+    <parameter name="hotels"value="Hotel Sunshine"></parameter>
+    <parameter name="room_type"value="Double"></parameter>
+    <parameter name="room_nos"value="2-Two"></parameter>
+    <parameter name="datepick_in"value="23/07/2021"></parameter>
+    <parameter name="datepick_out"value="24/07/2021"></parameter>
+    <parameter name="adult_room"value="2-Two"></parameter>
+    <parameter name="child_room"value="2-Two"></parameter>
+    <parameter name="first_name"value="chandra"></parameter>
+    <parameter name="last_name"value="mohan"></parameter>
+    <parameter name="address"value="chennai"></parameter>
+    <parameter name="cc_nos"value="1234567890123456"></parameter>
+    <parameter name="cc_type"value="Master Card"></parameter>
+    <parameter name="cc_exp_month"value="March"></parameter>
+    <parameter name="cc_exp_year"value="2025"></parameter>
+    <parameter name="cc_cvv"value="123"></parameter>
+    <parameter name="order_no"value="s18"></parameter>
+    
+    
+    
+    
+    <classes>
+      <class name="com.pages.AdactinBook"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

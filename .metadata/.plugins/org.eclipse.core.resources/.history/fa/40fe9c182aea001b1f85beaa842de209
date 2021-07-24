@@ -1,0 +1,22 @@
+package frames8amclass;
+
+import java.util.ArrayList;
+
+public class list extends UserDefinedList{
+public static void main(String[] args) {
+	list l = new list();
+	l.setUserName(1234);
+	l.setPassword("chandra");
+	list e = new list();
+e.setUserName1(2345);
+	e.setPassword1("Thvya");
+	list f = new list();
+	f.setUserName2(3456);
+	f.setPassword2("Yashvee");
+	
+list <list> a = new ArrayList();
+	
+	
+}
+
+}

@@ -1,0 +1,29 @@
+package com.pages;
+
+import org.testng.annotations.Test;
+
+public class AdactinBook extends LibGlobal {
+
+
+	@Test
+	public void bookingInfo() {
+		getDriver();
+		getUrl("https://adactinhotelapp.com");
+		
+AdactinLogin al= new AdactinLogin();
+al.login("cm123456", "chandra1985");
+
+ SearchHotel sh = new SearchHotel();
+sh.Search("london", "Hotel Sunshine", "Double", "2-Two", "23/07/2021","24/07/20121", "1-One", "1-One");
+	
+	
+	
+	
+	
+	
+	
+	
+	}
+	
+	
+}

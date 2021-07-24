@@ -1,0 +1,28 @@
+package org.libglobal;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class AdactinHotel {
+	WebDriver driver;
+	public String login(String username, String password) {
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
+		driver.get("https://adactinhotelapp.com");
+		driver.manage().window().maximize();
+        LibGlobal b = new LibGlobal();
+		WebElement txtUserName = driver.findElement(By.id("username"));
+		txtUserName.sendKeys(username);
+		WebElement txtPassword = driver.findElement(By.id("password"));
+		txtPassword.sendKeys(password);
+		WebElement btnlogin = driver.findElement(By.id("login"));
+		btnlogin.click();
+		return null;
+	}
+	
+}
+

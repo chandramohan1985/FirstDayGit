@@ -1,0 +1,17 @@
+package com.pages;
+
+import org.testng.annotations.Test;
+
+public class AdactinBook extends LibGlobal {
+
+
+	@Test
+	public void bookingInfo() {
+		getDriver();
+		getUrl("https://adactinhotelapp.com");
+		
+
+	}
+	
+	
+}

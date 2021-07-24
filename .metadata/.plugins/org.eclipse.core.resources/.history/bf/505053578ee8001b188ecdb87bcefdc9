@@ -1,0 +1,26 @@
+package frames8amclass;
+
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+public class Company {
+
+	@BeforeClass()
+	private void beforeclass() {
+		// TODO Auto-generated method stub
+System.out.println("before class");
+	}
+@Test()
+private void testc1() {
+	// TODO Auto-generated method stub
+System.out.println("test is pass");
+}
+	
+	
+	
+	
+	
+	
+	
+	
+}

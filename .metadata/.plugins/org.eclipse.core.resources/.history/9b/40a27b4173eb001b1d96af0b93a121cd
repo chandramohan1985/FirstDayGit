@@ -1,0 +1,31 @@
+package com.pages;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class LibGlobal {
+
+	public void send(WebElement element,String data) {
+	element.sendKeys(data);
+	}
+	public void click(WebElement element) {
+		element.click();
+	}
+	public void selectValue(WebElement element,String data) {
+		new Select(element).selectByValue(data);
+	}
+	public void selectIndex(WebElement element,int index) {
+	new Select(element).selectByIndex(index);	
+	}
+    public void getAttribute(WebElement element,String data) {
+    element.getAttribute(data);
+}
+	public WebDriver getDriver(String data) {
+		return new ChromeDriver();
+	}
+    
+    
+    
+}

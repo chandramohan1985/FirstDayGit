@@ -1,0 +1,22 @@
+package com.pages;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.FindBy;
+
+public class AdactinLogin extends LibGlobal{
+ public void Login() {
+LibGlobal l = new LibGlobal();
+WebDriver driver = l.getDriver();
+l.getUrl("https://adactinhotelapp.com/");
+l.maximize();
+
+@FindBy(id="userName")
+
+
+
+}
+}
+	
+	
+	
+

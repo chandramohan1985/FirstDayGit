@@ -1,0 +1,19 @@
+package com.pages;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class BookingConfirm extends LibGlobal {
+@FindBy(id="order_no")
+private WebElement txtOrderNo;
+
+public WebElement getTxtOrderNo() {
+	return txtOrderNo;
+}
+
+public void Booking(String order_no) {
+getAttribute(getTxtOrderNo(), order_no);
+
+}
+
+}

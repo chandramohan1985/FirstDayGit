@@ -1,0 +1,27 @@
+package org.libglobal;
+
+public class BookingAdactin {
+public static void main(String[] args) {
+	BaseFile b = new BaseFile();
+	AdactinHotel a=new AdactinHotel();
+	login(b.testDataRead(1, 0));
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
+}

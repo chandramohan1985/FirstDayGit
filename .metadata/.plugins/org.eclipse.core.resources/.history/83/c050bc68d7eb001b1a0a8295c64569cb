@@ -1,0 +1,31 @@
+package com.pages;
+
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+public class AdactinBook extends LibGlobal {
+
+	@Parameters({"username","password","location","hotels","room_type","room_nos","datepick_in","datepick_out","adult_room","child_room","first_name","last_name","address","cc_num","cc_type","cc_exp_month","cc_exp_year","cc_cvv","orderno"})
+@Test
+	private void bookingInfo(String s,String s1,String s2,String s3,String s4,String s5,String s6,String s7,String s8,String s9,String s10,String s11,String s12,String S13,String s14, String s15,String s16,String s17,String s18,String s19) {
+		getDriver();
+		getUrl("https://adactinhotelapp.com");
+		
+AdactinLogin al= new AdactinLogin();
+al.login("s1","s2");
+
+ SearchHotel sh = new SearchHotel();
+sh.Search("s3","s4","s5","s6","s7","s8","s9","s10");
+SelectHotel sl = new SelectHotel();	
+sl.Select();
+BookHotel bh = new BookHotel();
+	bh.Book("s11","s12","s13","s14","s15","s16","s17","s18");
+BookingConfirm bc = new BookingConfirm();
+bc.Booking("s19");
+	
+	
+	
+	}
+	
+	
+}

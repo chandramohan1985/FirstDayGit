@@ -1,0 +1,18 @@
+package frames8amclass;
+
+public class UserDefinedList {
+private int userName;
+private String password;
+private int userName;
+private String password;
+private int userName;
+private String password;
+
+
+
+}
+
+
+
+
+

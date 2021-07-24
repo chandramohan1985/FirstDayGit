@@ -1,0 +1,14 @@
+package com.pages;
+
+import org.openqa.selenium.WebElement;
+
+public class AdactinLogin extends LibGlobal{
+ 
+private WebElement txtUserName;
+
+}
+
+	
+	
+	
+

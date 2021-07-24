@@ -1,0 +1,29 @@
+package org.libglobal;
+
+import java.io.IOException;
+
+public class BookingAdactin {
+public static void main(String[] args) throws IOException {
+	BaseFile b = new BaseFile();
+	AdactinHotel a=new AdactinHotel();
+	a.login(b.testDataRead(0, 1), b.testDataRead(1, 1));
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
+}

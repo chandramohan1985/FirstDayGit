@@ -1,0 +1,24 @@
+package com.pages;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class SelectHotel {
+@FindBy(id="radiobutton_0")
+private WebElement btnSelect;
+
+public WebElement getBtnSelect() {
+	return btnSelect;
+}
+public SelectHotel() {
+LibGlobal l = new LibGlobal();
+
+
+
+
+
+}
+
+
+
+}

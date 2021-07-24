@@ -1,0 +1,15 @@
+package com.pages;
+
+import org.openqa.selenium.WebElement;
+
+public class LibGlobal {
+
+	public void sendKeys(WebElement Element,String data) {
+	.sendKeys(data);
+
+	}
+	
+	
+	
+	
+}

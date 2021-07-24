@@ -1,0 +1,15 @@
+package com.pages;
+
+import org.openqa.selenium.WebElement;
+
+public class AdactinLogin extends LibGlobal{
+ 
+@FindBy(id="username")
+private WebElement txtUserName;
+
+}
+
+	
+	
+	
+

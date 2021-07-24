@@ -1,0 +1,7 @@
+name: Suite
+tests:
+  - name: Test
+    parameters: { password: chandra1985, hotels: Hotel Sunshine, location: London, datepick_in: 20/07/2021, datepick_out: 21/07/2021, child_room: 1-one, adult_room: 1-one, room_nos: 1-one, username: cm123456, room_type: Double }
+    classes:
+      - com.testng.Adactin
+
